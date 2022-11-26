@@ -1,5 +1,9 @@
 #### How to use ?
 
+First, store your xslx files in the "DataFrames" folder
+
+For deployments with a docker image :
+
 ##### OPTION 1 / On a local jupyter lab interface
 
 Steps to launch the jupyter lab interface with the right dependencies:
