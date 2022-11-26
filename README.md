@@ -32,7 +32,7 @@ for running scripts, storing files...
 
 To execute the notebook, you must identify yourself to your Google'account : 
 
-- Log in to your google account first
+- Log in to your google account first (and you must have a account on GCP and activate the API Google Earth Engine)
 
 - Launch the first two cells and go to the indicated address
 
