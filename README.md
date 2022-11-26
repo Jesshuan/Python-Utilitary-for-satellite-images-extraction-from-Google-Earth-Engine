@@ -12,6 +12,9 @@ Steps to launch the jupyter lab interface with the right dependencies:
 - Run image with the command :
 ```docker run -it -v $(pwd):/home/my_notebooks -p 8888:8888 nom_de_mon_image```
 
+For Windows : %cd%
+For Powershell terminal : ${pwd}
+
 - Go to the link specified in the terminal : http://127.0.0.1:8888/ ...
 
 - The volume of my_notebooks in the Jupyter Lab should be synchronized with the working directory,
