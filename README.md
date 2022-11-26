@@ -1,6 +1,9 @@
 #### How to use ?
 
-First, store your xslx files in the "DataFrames" folder
+- First, store your xslx files in the "DataFrames" folder
+
+- Verify your user's parameters in the programm... ('LFI', 'Satellite'...)
+
 
 For deployments with a docker image :
 
@@ -38,3 +41,12 @@ To execute the notebook, you must identify yourself to your Google'account :
 - Copy the token in the output of the cell
 
 
+##### OPTION 2 / Use the script .py
+
+You can also use the script 'SAT_images...'.py 
+
+But you have to :
+
+- Install and gcloud CLI for the authentification (https://cloud.google.com/sdk/docs/install#linux)
+
+- install all the dependencies in your local host machine... or run the docker image in the folder 'Docker_Deployment_local'... Then, go to the bash, install the CLI gcloud, and launch the script from the environnement...
