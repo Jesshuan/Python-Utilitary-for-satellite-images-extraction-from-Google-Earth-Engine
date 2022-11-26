@@ -1,19 +1,20 @@
 #### How to use ?
 
+##### OPTION 1 / On a local jupyter lab interface
+
 Steps to launch the jupyter lab interface with the right dependencies:
 
 - Go to the deployment directory : ``` cd Docker_Deployment ```
 
 - Build image with the command :
-```docker build . -t nom_de_mon_image```
+```docker build . -t my_image_name```
 
 - Come back to the first directory source : ``` cd .. ```
 
 - Run image with the command :
-```docker run -it -v $(pwd):/home/my_notebooks -p 8888:8888 nom_de_mon_image```
+```docker run -it -v $(pwd):/home/my_notebooks -p 8888:8888 my_image_name```
 
-For Windows : %cd%
-For Powershell terminal : ${pwd}
+(For Windows : %cd% / For Powershell terminal : ${pwd} )
 
 - Go to the link specified in the terminal : http://127.0.0.1:8888/ ...
 
