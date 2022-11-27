@@ -9,14 +9,6 @@ import json
 from json import JSONEncoder
 
 
-# Code for TEST :
-#data_used = data_used[0:5]
-
-# Code for a problematic relaunch (to filter the dataset with the problematic parcelles list) :
-#pb_list_df = pd.read_csv('Problematic_parcelles.csv')
-#pb_list = pb_list_df['Problematic parcelles'].to_list()
-#data_used = data_used.loc[data_used['PARCELLE'].isin(pb_list),:]
-
 # CLASS FOR EXCEPTIONS :
 
 class NoImage(Exception):
@@ -161,9 +153,9 @@ def collection_to_array(lat_loc, lon_loc, date_dep, date_fin):
 
 # -------------- USER'S PARAMETERS ----------------------
 
-Sattelite = 'LANDSAT/LT05/C02/T2'
+Sattelite = 'LANDSAT/LE07/C02/T1'
 
-LFI = 'LFI1'
+LFI = 'LFI4'
 
 dim_image = 200 #mètres de côté
 
@@ -173,7 +165,7 @@ Spectral_Functions = {'NDVI':NDVI, 'EVI':EVI, 'NDMI':NDMI, 'NDWI':NDWI, 'DSWI':D
 
 # Moitié d'ouverture temporelle (centrée au 30 juin) :
 
-days = 15
+days = 10
 # La collection d'images se fera entre date - days et date + days...
 
 
@@ -192,6 +184,14 @@ if __name__ == "__main__":
     data_used = data[['PARCELLE','LAT', 'LON','DATE','LFI']]
 
     data_used = data_used.loc[data_used['LFI']==LFI,:]
+
+    # Code for TEST :
+    #data_used = data_used[0:5]
+
+    # Code for a problematic relaunch (to filter the dataset with the problematic parcelles list) :
+    #pb_list_df = pd.read_csv('Problematic_parcelles.csv')
+    #pb_list = pb_list_df['Problematic parcelles'].to_list()
+    #data_used = data_used.loc[data_used['PARCELLE'].isin(pb_list),:]
 
     # IMAGES CAPTURE :
 
