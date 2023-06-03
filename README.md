@@ -1,3 +1,16 @@
+## Utilitary notebooks for satellites images extraction with Google Earth Engine (Python)
+
+If you have to quickly extract some images from Google Earth Engine (satellites:  Landsat 5-8 or Sentinel-2 program, or any others ...), with few hyper-aparameters...
+
+Machine Learning projects (CNN, temporal predictions...), vegetetions monitoring, infrastructure recognition... 
+
+You can define : your satellite, your spectral bands, your time period acquisition (15 days by default) around a specific date.
+
+Transformation in a matrix pictures (numpy array). This is the main interest of this code !...
+
+Output format in json format, but you can custom it.
+
+
 #### How to use ?
 
 - First, store your xslx files in the "DataFrames" folder
